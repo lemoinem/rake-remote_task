@@ -21,9 +21,10 @@ Rake with remote task goodness.}
   gem.rdoc_options = ["--main", "README.txt"]
   gem.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.txt"]
 
-   gem.add_runtime_dependency("rake", ["~> 0.8"])
+   gem.add_runtime_dependency("rake", ["< 11.0", ">= 0.8"])
    gem.add_runtime_dependency("open4", ["~> 1.0"])
 
-   gem.add_development_dependency("minitest", ["~> 1.7.0"])
-   gem.add_development_dependency("hoe", [">= 2.9.1"])
+   gem.add_development_dependency("minitest", ["~> 4.3"])
+   gem.add_development_dependency("hoe", ["~> 3.3"])
+   gem.add_development_dependency("rdoc", ["~> 3.10"])
 end
